@@ -17,11 +17,15 @@ npm install
 ```bash
 npm test
 npm run test:headed
+npm run test:ui
+npm run test:debug
 npm run test:report
 ```
 
 - `npm test` runs Playwright tests in headless mode.
 - `npm run test:headed` runs tests with a browser window.
+- `npm run test:ui` runs tests in UI mode with interactive test runner.
+- `npm run test:debug` runs tests in debug mode for troubleshooting.
 - `npm run test:report` opens the Playwright HTML report.
 
 ## TypeScript configuration
@@ -38,55 +42,53 @@ This project includes `tsconfig.json` configured for:
 Tests are located in the `tests/` directory:
 
 - `tests/example.spec.ts` - Basic example tests
-- `tests/practice.spec.ts` - Comprehensive practice test suite with 85+ test cases
+- `tests/practice.spec.ts` - Comprehensive practice test suite covering core Playwright features
 
 ### Practice Test Suite (`practice.spec.ts`)
 
-A comprehensive test file covering various Playwright testing scenarios from [testautomationpractice.blogspot.com](https://testautomationpractice.blogspot.com/p/playwrightpractice.html):
+A practical test file with 30+ test cases covering essential Playwright features:
 
 **Test Categories:**
 
-1. **Locator Strategies**
-   - `getByRole()` - Testing by button, toggle, form input, alert roles
-   - `getByText()` - Locating elements by text content
-   - `getByLabel()` - Finding labeled form inputs
-   - `getByPlaceholder()` - Locating by placeholder text
-   - `getByAltText()` - Finding images by alt text
-   - `getByTitle()` - Locating by title attributes
-   - `getByTestId()` - Using test IDs for locating elements
-
-2. **File Operations**
-   - Single and multiple file uploads
-   - File input handling
-
-3. **Web Tables**
-   - Static table header verification
-   - Table data extraction and validation
-   - Pagination handling
-   - Row and cell counting
-
-4. **Interactive Elements**
-   - Tab switching and navigation
-   - Dynamic button interactions
-   - Alert handling (accept, dismiss, prompt)
-   - Mouse hover actions
-   - Double-click operations
-   - Drag-and-drop functionality
-   - Slider interactions
-   - SVG element selection
-   - Dropdown/select element handling
-
-5. **Links and Navigation**
-   - Mobile and laptop labels
-   - Link validation
-   - Broken link detection with HTTP status codes
-   - Navigation link verification
-
-6. **Additional Features**
-   - Page title verification
+1. **Page Navigation & Structure**
+   - Page load verification
    - URL validation
-   - Form filling and submission
-   - Dynamic element detection
+   - Content presence checks
+
+2. **Form & Input Handling**
+   - Text input location and interaction
+   - Search functionality
+   - Input value verification
+
+3. **Button & Link Interaction**
+   - Button location and clicking
+   - Link verification
+   - Link count validation
+
+4. **Table Testing**
+   - Static table structure
+   - Table headers and cells
+   - Row and cell content verification
+
+5. **Element Locators**
+   - Headings, paragraphs, lists
+   - Elements with data attributes
+   - Elements with IDs and classes
+
+6. **Accessibility Features**
+   - Main content areas
+   - Navigation elements
+   - ARIA role detection
+
+7. **Interaction Testing**
+   - Text input and filling
+   - Button clicking
+   - Link navigation
+
+8. **Performance & Styling**
+   - Page load timing
+   - Element styling verification
+   - Responsive design testing
 
 ## Playwright config
 
