@@ -35,9 +35,58 @@ This project includes `tsconfig.json` configured for:
 
 ## Test files
 
-Tests are located in the `tests/` directory. Current example:
+Tests are located in the `tests/` directory:
 
-- `tests/example.spec.ts`
+- `tests/example.spec.ts` - Basic example tests
+- `tests/practice.spec.ts` - Comprehensive practice test suite with 85+ test cases
+
+### Practice Test Suite (`practice.spec.ts`)
+
+A comprehensive test file covering various Playwright testing scenarios from [testautomationpractice.blogspot.com](https://testautomationpractice.blogspot.com/p/playwrightpractice.html):
+
+**Test Categories:**
+
+1. **Locator Strategies**
+   - `getByRole()` - Testing by button, toggle, form input, alert roles
+   - `getByText()` - Locating elements by text content
+   - `getByLabel()` - Finding labeled form inputs
+   - `getByPlaceholder()` - Locating by placeholder text
+   - `getByAltText()` - Finding images by alt text
+   - `getByTitle()` - Locating by title attributes
+   - `getByTestId()` - Using test IDs for locating elements
+
+2. **File Operations**
+   - Single and multiple file uploads
+   - File input handling
+
+3. **Web Tables**
+   - Static table header verification
+   - Table data extraction and validation
+   - Pagination handling
+   - Row and cell counting
+
+4. **Interactive Elements**
+   - Tab switching and navigation
+   - Dynamic button interactions
+   - Alert handling (accept, dismiss, prompt)
+   - Mouse hover actions
+   - Double-click operations
+   - Drag-and-drop functionality
+   - Slider interactions
+   - SVG element selection
+   - Dropdown/select element handling
+
+5. **Links and Navigation**
+   - Mobile and laptop labels
+   - Link validation
+   - Broken link detection with HTTP status codes
+   - Navigation link verification
+
+6. **Additional Features**
+   - Page title verification
+   - URL validation
+   - Form filling and submission
+   - Dynamic element detection
 
 ## Playwright config
 
