@@ -42,53 +42,62 @@ This project includes `tsconfig.json` configured for:
 Tests are located in the `tests/` directory:
 
 - `tests/example.spec.ts` - Basic example tests
-- `tests/practice.spec.ts` - Comprehensive practice test suite covering core Playwright features
+- `tests/practice.spec.ts` - Comprehensive practice test suite with optimized tests
 
 ### Practice Test Suite (`practice.spec.ts`)
 
-A practical test file with 30+ test cases covering essential Playwright features:
+An optimized test file with consolidated test cases focusing on core Playwright features:
 
-**Test Categories:**
+**Optimizations:**
+- Reduced test count from 90 to 12 consolidated tests
+- Shared page instance across all tests for efficiency
+- Helper functions to reduce code duplication
+- Grouped related test scenarios for better organization
+- Used `beforeAll`/`afterAll` instead of `beforeEach`/`afterEach` for performance
+
+**Test Coverage:**
 
 1. **Page Navigation & Structure**
-   - Page load verification
    - URL validation
+   - Page title verification
    - Content presence checks
 
-2. **Form & Input Handling**
-   - Text input location and interaction
-   - Search functionality
-   - Input value verification
-
-3. **Button & Link Interaction**
-   - Button location and clicking
-   - Link verification
-   - Link count validation
-
-4. **Table Testing**
-   - Static table structure
-   - Table headers and cells
-   - Row and cell content verification
-
-5. **Element Locators**
-   - Headings, paragraphs, lists
-   - Elements with data attributes
+2. **DOM Element Location**
+   - Tables, inputs, buttons, links
+   - Lists, paragraphs, headings
+   - Forms, dropdowns, data attributes
    - Elements with IDs and classes
 
-6. **Accessibility Features**
-   - Main content areas
-   - Navigation elements
-   - ARIA role detection
+3. **Table Structure Verification**
+   - Table headers, rows, and cells
+   - Table integrity validation
 
-7. **Interaction Testing**
-   - Text input and filling
-   - Button clicking
-   - Link navigation
+4. **Accessibility**
+   - Main content area detection
+   - Navigation elements presence
 
-8. **Performance & Styling**
-   - Page load timing
+5. **Form Interactions**
+   - Text input filling
+   - Input value verification
+
+6. **Page Content Quality**
+   - Text content verification
+   - Content length validation
+
+7. **Responsive Design**
+   - Window size validation
+   - Layout dimension checks
+
+8. **Performance**
+   - Page load time verification
+   - Layout scrolling validation
+
+9. **Styling & CSS**
    - Element styling verification
-   - Responsive design testing
+   - Computed styles checking
+
+10. **Data Attributes**
+    - Data-driven element detection
 
 ## Playwright config
 
